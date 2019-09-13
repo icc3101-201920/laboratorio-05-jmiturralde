@@ -138,7 +138,7 @@ namespace Laboratorio_4_OOP_201902
 
                 if (cardPlayed.Type == EnumType.buff || cardPlayed.Type == EnumType.bufflongRange || cardPlayed.Type == EnumType.buffmelee || cardPlayed.Type == EnumType.buffrange)
                 {
-                    Board.AddCard(cardPlayed, id, EnumType);
+                    Board.AddCard(cardPlayed, id, cardPlayed.Type);
 
                     Hand.DestroyCard(cardId);
 
